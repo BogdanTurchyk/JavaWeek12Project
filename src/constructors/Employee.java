@@ -3,7 +3,7 @@ package constructors;
 public class Employee {
 
     public String name, jobTitle;
-    public int Id;
+    public int ID;
     public double salary;
     public static String companyName;
 
@@ -18,11 +18,19 @@ public class Employee {
     public Employee(String name, String jobTitle, int id, double salary) {
         this.name = name;
         this.jobTitle = jobTitle;
-        Id = id;
+        ID = id;
         this.salary = salary;
     }
 
-
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", Id=" + ID +
+                ", salary=" + salary +
+                ", company Name=" + companyName +
+                '}';
+    }
 }
 
 /*
